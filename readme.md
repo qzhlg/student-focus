@@ -5,3 +5,7 @@
 ```js
     dva new student-focus
 ```
+- 启服务
+```js
+    npm run start
+```
