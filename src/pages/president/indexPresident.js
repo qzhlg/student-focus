@@ -17,7 +17,9 @@ function President(){
                    <span>1704B</span>
                    <span>1704C</span>
                </div>
+               <div>名单：</div>
            </div>
+          
         </div>
     )
 }
