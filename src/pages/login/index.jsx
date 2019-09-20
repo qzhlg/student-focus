@@ -14,6 +14,7 @@ function LoginPage(props) {
       type: "user/login",
       payload: values
     })
+    
   }
 
   return (

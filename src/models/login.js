@@ -1,4 +1,5 @@
 import {UserLogin} from '../services/request'
+import {routerRedux} from 'dva/router'
 export default {
     namespace: 'user',
 
@@ -20,8 +21,8 @@ export default {
         }
         let result=yield call(UserLogin,data)
         console.log(result)
-        yield put({ type:'save'});
-        return 11
+        // yield put({ type:'save'});
+        yield put(routerRedux.push('/home/visual'));
       },
     },
   
