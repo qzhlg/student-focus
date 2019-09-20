@@ -1,13 +1,15 @@
-import request from '../utils/request';
-import axios from 'axios'
-export function query() {
-  return request('/api/users');
-}
+import instance from '../utils/interface'
 
-export async function UserLogin(payload){
-  const url="/api/emstu/teacher/login"
+
+// export async function UserLogin(payload){
+//   const url="/api/emstu/teacher/login"
+//   console.log(payload)
+//   return await request.post(url,{
+//     ...payload
+//   })
+// }
+export function UserLogin(payload) {
   console.log(payload)
-  return await request.post(url,{
-    ...payload
-  })
+  const url = "/emstu/teacher/login"
+  return instance.post(url, payload)
 }

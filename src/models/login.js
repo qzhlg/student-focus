@@ -1,5 +1,4 @@
 import {UserLogin} from '../services/request'
-console.log(UserLogin)
 export default {
     namespace: 'user',
 
@@ -13,11 +12,17 @@ export default {
     effects: {
       *login({ payload }, { call, put }) {  // eslint-disable-line
         console.log(payload)
-        let result=yield call(UserLogin,payload)
+
+        let {userval, pwdval}=payload;
+        let data={
+          username:userval,
+          password:pwdval
+        }
+        let result=yield call(UserLogin,data)
         console.log(result)
-        yield put({ type: 'login'});
+        yield put({ type:'save'});
+        return 11
       },
-     
     },
   
     reducers: { 

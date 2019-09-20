@@ -1,14 +1,21 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'dva';
 import styles from './loginPage.css'
 
-function LoginPage(dispatch) {
+function LoginPage(props) {
   const [index, setIndex] = useState(0);
-  const  handSumit=()=>{
-    console.log(2)
-  
-  }
+  const [userval, setUserval] = useState(0)
+  const [pwdval, setPawval] = useState(0)
  
+  const handSumit = () => {
+    const values = { userval, pwdval }
+    console.log(props)
+    props.dispatch({
+      type: "user/login",
+      payload: values
+    })
+  }
+
   return (
     <div className={styles.loginBox}>
       <div className={styles.top}>
@@ -26,14 +33,14 @@ function LoginPage(dispatch) {
           </div>
           <div className={styles.form_input}>
             <p>
-              <input placeholder="请输入用户名" className={styles.ipt}/>
+              <input placeholder="请输入用户名" className={styles.ipt} onChange={(e) => setUserval(e.target.value)} />
             </p>
             <p>
-              <input placeholder="请输入密码" className={styles.ipt} />
+              <input placeholder="请输入密码" className={styles.ipt} onChange={(e) => setPawval(e.target.value)} />
             </p>
 
             <p>
-              {index===1 ?  <button>注册</button>:<h6 className={styles.auto}>
+              {index === 1 ? <button>注册</button> : <h6 className={styles.auto}>
                 <input type="checkbox" name="" id="" />
                 两周内自动登陆 <button onClick={handSumit}>登陆</button></h6>}
             </p>
@@ -49,6 +56,7 @@ LoginPage.propTypes = {
 
 };
 
-export default connect(({user})=>{
-  user
-})(LoginPage);
+export default connect(({ user }) => ({
+  user,
+}))(LoginPage);
+

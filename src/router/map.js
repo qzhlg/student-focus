@@ -20,7 +20,6 @@ class MapRouter extends Component {
           {routes.map((item, index) => {
             return (
               <Route path={item.path} key={index} render={(props)=>{
-                  // console.log(props)
                   return <item.component routes={item.children} {...props}></item.component>
               }} />
             );

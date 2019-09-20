@@ -12,6 +12,5 @@ export default {
   },
   "alias": {
     "@": path.join(__dirname, "./src")
-  },
-
+  }
 }
