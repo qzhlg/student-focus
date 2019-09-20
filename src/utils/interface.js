@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {Spin ,Message} from 'antd'
+import {Message} from 'antd'
 let instance = axios.create({
     baseURL: '/api',
     timeout: 1000,
