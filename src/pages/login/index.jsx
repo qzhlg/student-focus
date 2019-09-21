@@ -9,14 +9,20 @@ function LoginPage(props) {
  
   const handSumit = () => {
     const values = { userval, pwdval }
-    console.log(props)
     props.dispatch({
       type: "user/login",
       payload: values
     })
     
   }
-
+  const handRegistry=()=>{
+    const values = { userval, pwdval }
+    console.log(values)
+    props.dispatch({
+      type: "registry/registry",
+      payload: values
+    })
+  }
   return (
     <div className={styles.loginBox}>
       <div className={styles.top}>
@@ -41,7 +47,7 @@ function LoginPage(props) {
             </p>
 
             <p>
-              {index === 1 ? <button>注册</button> : <h6 className={styles.auto}>
+              {index === 1 ? <button onClick={handRegistry}>注册</button> : <h6 className={styles.auto}>
                 <input type="checkbox" name="" id="" />
                 两周内自动登陆 <button onClick={handSumit}>登陆</button></h6>}
             </p>
@@ -57,7 +63,8 @@ LoginPage.propTypes = {
 
 };
 
-export default connect(({ user }) => ({
+export default connect(({ user,registry }) => ({
   user,
+  registry
 }))(LoginPage);
 

@@ -21,3 +21,17 @@
 /*大屏幕，或者宽屏*/
 @media screen and (min-width: 1200px) {}
 ```
+## echarts
+```js
+npm i --save echarts
+````
+
+## 使用hook
+```js
+import React,{useState,useEffect} from 'react'
+```
+## 使用mockjs mock数据
+
+```js
+npm i --save mockjs
+```
