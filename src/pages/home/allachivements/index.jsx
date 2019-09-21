@@ -3,7 +3,7 @@ import styles from './index.css'
 import Mock from 'mockjs'
 import Table from '../../../components/table'
 const data=Mock.mock({
-    "list|4":[
+    "list|20":[
         {
             "id|+1": 1,
             "num|+1": 1,

@@ -9,7 +9,7 @@ const option = {
         trigger: 'axis'
     },
     legend: {
-        data:['技能','理论']
+        data:['理论','技能']
     },
     toolbox: {
         show: true,

@@ -1,13 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from '../pages/home/allachivements/index.css'
+import Achievment from './achivedialog/index'
 function Table(props) {
-    console.log(props)
+    const [isShow,setShow]=useState(0)
+    const [title,setTitle]=useState(0)
+    
     const {newdata}=props
+    
     const showDialog=(str)=>{
-        // if(str==="编辑"){
-        //     console.log(`this is ${str}`)
-        // }
-        console.log(`this is ${str}`)
+      
+        if(str==="编辑"){
+            setShow(true)
+            setTitle("编辑内容")
+        }else if(str==="删除"){
+          setShow(true)
+        }
     }
     return (
         <table className={styles.content}>
@@ -33,6 +40,7 @@ function Table(props) {
             <a onClick={()=>showDialog("删除")}>删除</a>
           </td>
         </tr>)}
+        {isShow?<Achievment isShow={isShow} title={title} showDialog={showDialog}/>:''}
       </table>
     )
 }
