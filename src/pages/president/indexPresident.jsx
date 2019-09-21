@@ -91,8 +91,9 @@ function President(){
         }
       ]
     })
-
+    
   })
+  
     return (
         <div className={styles.President}>
            <div className={styles.box}>
@@ -106,7 +107,11 @@ function President(){
                    <span>1704B</span>
                    <span>1704C</span>
                </div>
-               <div>名单：</div>
+               <div className={styles.name}>
+                 <p>名单：</p>
+                 <span>张三，张立，王强</span>
+                
+               </div>
            </div>
           <div>
           <div id="main" style={{ width: '100%', height: '500px' }}></div>

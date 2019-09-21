@@ -1,8 +1,9 @@
-@media screen and (min-width: 300px){
+
+
+@media screen and (min-width: 375px){
     .box{
-        left: 0px;
-        top: 0px;
-        /*width: 100%; */
+        /* left: 0px;
+        top: 0px; */
         width: 100%;
         height: 45px;
         line-height: 45px;
@@ -13,11 +14,12 @@
         font-family: Roboto;
         border: 1px solid rgba(187, 187, 187, 1);
     }
+    
+
     .top{
-       
+      
         width: 100%;
         height: 101px;
-   
         border: 1px solid rgba(187, 187, 187, 1);
     }
     .count{
@@ -25,13 +27,14 @@
         height: 50px;
         margin: 0 auto;
         flex-wrap: wrap;
-
+        display: flex;
+        align-items: center;
     }
     .count span{
         left: 288px;
         top: 130px;
-        width: 100px;
-        height: 40px;
+        width: 60px;
+        height: 30px;
         line-height: 20px;
         border-radius: 4px 4px 4px 4px;
         background-color: rgba(230, 241, 252, 1);
@@ -40,21 +43,33 @@
         color: rgba(255, 255, 255, 1);
         font-size: 12px;
         margin-right: 12px;
-    }
-    .record{
-        width: 100%;
-        height: 100px;
         display: flex;
         align-items: center;
-        background-color: rgba(255, 255, 255, 1);
-        color: rgba(16, 16, 16, 1);
+        justify-content: center;
+    }
+
+     .name{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .name span{
+        margin-left: 20px;
         font-size: 14px;
-        text-align: center;
-        font-family: Roboto;
-        border: 1px solid rgba(0, 118, 255, 1);
+    }
+    .record{
+
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        padding: 0 10px;
     }
     .readOnly{
-        width: 20%;
+        width: 13%;
         height: 100px;
         font-size: 14px;
     
@@ -70,11 +85,10 @@
 
 
 
-@media screen and (min-width: 300px) and (max-width: 1200px) {
+@media screen and (min-width: 375px) and (max-width: 1200px) {
     .box{
         left: 0px;
         top: 0px;
-        /*width: 100%; */
         width: 100%;
         height: 45px;
         line-height: 45px;
@@ -88,7 +102,7 @@
     }
     .top{
       
-        width: 1440px;
+        width: 100%;
         height: 101px;
         border: 1px solid rgba(187, 187, 187, 1);
     }
@@ -97,12 +111,14 @@
         height: 50px;
         margin: 0 auto;
         flex-wrap: wrap;
+        display: flex;
+        align-items: center;
     }
     .count span{
         left: 288px;
         top: 130px;
-        width: 100px;
-        height: 40px;
+        width: 60px;
+        height: 30px;
         line-height: 20px;
         border-radius: 4px 4px 4px 4px;
         background-color: rgba(230, 241, 252, 1);
@@ -111,19 +127,29 @@
         color: rgba(255, 255, 255, 1);
         font-size: 12px;
         margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .name span{
+        margin-left: 20px;
+        font-size: 14px;
     }
     .record{
+
         width: 100%;
-        height: 100px;
+        height: 150px;
         display: flex;
-        background-color: rgba(255, 255, 255, 1);
-        color: rgba(16, 16, 16, 1);
-        font-size: 14px;
-        text-align: center;
         align-items: center;
-        font-family: Roboto;
-        border: 1px solid rgba(0, 118, 255, 1);
-        
+        font-size: 14px;
+        padding: 0 10px;
     }
     .readOnly{
         width: 20%;
@@ -167,12 +193,15 @@
         height: 50px;
         margin: 0 auto;
         flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        
     }
     .count span{
         left: 288px;
         top: 130px;
-        width: 100px;
-        height: 40px;
+        width: 60px;
+        height: 30px;
         line-height: 20px;
         border-radius: 4px 4px 4px 4px;
         background-color: rgba(230, 241, 252, 1);
@@ -181,19 +210,30 @@
         color: rgba(255, 255, 255, 1);
         font-size: 12px;
         margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .name span{
+        margin-left: 20px;
+        font-size: 14px;
     }
 
     .record{
+
         width: 100%;
-        height: 100px;
+        height: 150px;
         display: flex;
         align-items: center;
-        background-color: rgba(255, 255, 255, 1);
-        color: rgba(16, 16, 16, 1);
         font-size: 14px;
-        text-align: center;
-        font-family: Roboto;
-        border: 1px solid rgba(0, 118, 255, 1);
+        padding: 0 10px;
     }
     .readOnly{
         width: 20%;
