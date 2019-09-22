@@ -73,6 +73,9 @@ html,body{
         font-size: 14px;
        
         .head{
+            position: fixed;
+            top:0;
+            left:0;
             height: 100px;
             width: 100%;
             background: #0076FF;
@@ -81,6 +84,7 @@ html,body{
             line-height: 100px;
            
         }
+        
         .tabmain{
             width: 90%;
             height: 100%;

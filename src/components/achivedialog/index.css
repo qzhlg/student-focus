@@ -9,72 +9,118 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
-.achivebox .achiveform {
-  width: 50%;
-  height: auto;
-  background: #fff;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 768px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-size: calc(100/750*100vw);
+  }
+  .achivebox {
+    font-size: 14px;
+  }
+  .achiveform {
+    width: 80%;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .achiveform h2 {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .achiveform p {
+    height: calc(.2rem*2);
+    margin: 10px 15px;
+  }
+  .achiveform p input {
+    border: 1px #ccc solid;
+  }
+  .achiveform p span {
+    display: inline-block;
+    width: 60px;
+    height: calc(.2rem*2);
+    border: 1px skyblue solid;
+    margin: 5px 20px;
+    text-align: center;
+    line-height: calc(.2rem*2);
+  }
+  .achiveform p .text {
+    width: 60%;
+    height: calc(.5rem*2);
+    margin: 10px;
+  }
+  .achiveform .btn button {
+    width: 80px;
+    height: calc(.3rem*2);
+    border: 1px #ccc solid;
+    margin: 50px 40px 10px 10px;
+  }
+  .achiveform .btn .delete {
+    background: #e5e5e5;
+  }
+  .achiveform .btn .sure {
+    background: #1890FF 100%;
+    color: #fff;
+  }
 }
 
-.achivebox .achiveform h2 {
-  padding: 10px;
-  text-align: left;
-  font-size: 16px;
-}
-
-.achivebox .achiveform p {
-  height: 40px;
-  margin: 10px 15px;
-}
-
-.achivebox .achiveform p input {
-  border: 1px #ccc solid;
-}
-
-.achivebox .achiveform p span {
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  border: 1px skyblue solid;
-  margin: 5px 20px;
-  text-align: center;
-  line-height: 30px;
-}
-
-.achivebox .achiveform p .text {
-  width: 297px;
-  height: 93px;
-}
-
-.achivebox .achiveform .btn {
-  height: 100px;
-  width: 100%;
-}
-
-.achivebox .achiveform .btn button {
-  width: 80px;
-  height: 40px;
-  border: 1px #ccc solid;
-  margin: 50px 40px 10px 10px;
-}
-
-.achivebox .achiveform .btn button .active {
-  color: #fff;
-}
-
-.achivebox .achiveform .btn .delete {
-  background: #e5e5e5;
-}
-
-.achivebox .achiveform .btn .sure {
-  background: #1890FF 100%;
+@media screen and (min-width: 768px) {
+  .achiveform {
+    width: 50%;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .achiveform h2 {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .achiveform p {
+    height: 40px;
+    margin: 10px 15px;
+  }
+  .achiveform p input {
+    border: 1px #ccc solid;
+  }
+  .achiveform p span {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: 1px skyblue solid;
+    margin: 5px 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .achiveform p .text {
+    width: 297px;
+    height: 93px;
+  }
+  .achiveform .btn button {
+    width: 80px;
+    height: 40px;
+    border: 1px #ccc solid;
+    margin: 50px 40px 10px 10px;
+  }
+  .achiveform .btn .delete {
+    background: #e5e5e5;
+  }
+  .achiveform .btn .sure {
+    background: #1890FF 100%;
+    color: #fff;
+  }
 }

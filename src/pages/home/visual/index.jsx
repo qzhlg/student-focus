@@ -59,8 +59,8 @@ function Visual(props) {
 
                 <Broken></Broken>
                 <Center></Center>
-                <Columnar></Columnar>
-                <Center></Center>
+                {/* <Columnar></Columnar>
+                <Center></Center> */}
             </div>
 
         </div>

@@ -120,12 +120,16 @@ background: #1890FF;
 @media screen and (min-width: 768px) {
     
     .topvisual{
+        
         height: 100px;
-        background: #0076FF 100%;
+        width: 100%;
+        background: #0076FF;
+        color: #fff;
         text-align: center;
         line-height: 100px;
-        color: #fff;
-        
+        position: fixed;
+        top:0;
+        left:0;
     }
     .visualmain{
         height: auto;
