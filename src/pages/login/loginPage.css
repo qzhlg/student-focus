@@ -1,0 +1,193 @@
+:global(*) {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+:global(.loginBox) {
+  width: 100%;
+  height: 100%;
+}
+
+:global(.active) {
+  color: #3F51B5;
+  border-bottom: 2px #3F51B5 solid;
+}
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    font-size: calc(100/750*100vw);
+  }
+
+  .loginBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .top {
+    text-align: center;
+    line-height: calc(.5rem*2);
+    height: calc(.5rem*2);
+    background: #3F51B5;
+    color: #fff;
+  }
+
+  .main {
+    flex: 1;
+  }
+
+  .form {
+    width: 80%;
+    height: calc(2.6rem*2);
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    margin: 100px auto;
+  }
+
+  .title {
+    height: calc(.34rem*2);
+    text-align: center;
+    line-height: calc(.34rem*2);
+    color: rgba(16, 16, 16, 1);
+    font-family: SourceHanSansSC-regular;
+  }
+
+  .page {
+    height: calc(.5rem*2);
+    margin: 10px auto 0;
+    width: 70%;
+
+  }
+
+  .page span {
+    margin: 0 40px;
+  }
+
+  .form_input {
+    height: auto;
+  }
+
+  .form_input p {
+
+    height: calc(.5rem*2);
+    margin: 3px auto;
+    margin-left: 35px;
+  }
+
+  .form_input p .ipt,
+  button {
+    height: calc(.3rem*2);
+    width: 80%;
+
+  }
+
+  .form_input p button {
+    background: #3F51B5;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+
+/* @media screen and (min-width: 750px) and (max-width: 2000px) {
+
+   
+
+} */
+
+@media screen and (min-width: 768px) {
+
+  :global(.loginBox) {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .top{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(63, 81, 181, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 1);
+    line-height: 100px;
+    margin: auto;
+  }
+
+  .main {
+    height: 100%;
+    width: 100%;
+  }
+
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 499px;
+    height: 471px;
+    border: 1px #ccc solid;
+  }
+
+  .title {
+    left: 492px;
+    top: 275px;
+    width: 457px;
+    height: 68px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 36px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+    line-height: 68px;
+  }
+
+  .page {
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 70%;
+
+  }
+
+  .page span {
+    margin: 0 60px;
+    cursor: pointer;
+  }
+
+  .form_input {}
+
+  .form_input p {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+    margin-left: 80px;
+  }
+
+  .form_input p .ipt,
+  button {
+    width: 70%;
+    height: 30px;
+    border: 1px #ccc solid;
+  }
+
+  .form_input p button {
+    background: #3F51B5;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+  }
+}

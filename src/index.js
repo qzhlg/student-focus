@@ -1,17 +1,18 @@
 import dva from 'dva';
-import './index.css';
+import RouterView from './router/index'
+import login from './models/login'
+import registry from './models/registry'
+import './index.css'
+// require('./models').default.forEach(key => {
+//     app.model(key.default)
+// });
+const createHashHistory = require('history').createHashHistory
+const app = dva({
+    history: createHashHistory()
+})
 
-// 1. Initialize
-const app = dva();
+app.model(login)
+app.model(registry)
+app.router(RouterView)
+app.start('#root')
 
-// 2. Plugins
-// app.use({});
-
-// 3. Model
-// app.model(require('./models/example').default);
-
-// 4. Router
-app.router(require('./router').default);
-
-// 5. Start
-app.start('#root');

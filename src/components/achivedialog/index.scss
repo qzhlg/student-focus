@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.achivebox{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+}
+@media screen and (max-width:768px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-size: calc(100/750*100vw)
+    }
+    .achivebox{
+        font-size:14px;
+    }
+    .achiveform{
+        
+        width: 80%;
+        height: auto;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h2{
+            padding: 10px;
+            text-align: left;
+            font-size: 16px;
+
+        }
+        p{
+            height: calc(.2rem*2);
+            input{
+                border: 1px #ccc solid;
+            }
+            margin: 10px 15px;
+            span{
+                display: inline-block;
+                width: 60px;
+                height: calc(.2rem*2);
+                border: 1px skyblue solid;
+                margin: 5px 20px;
+                text-align: center;
+                line-height: calc(.2rem*2);
+            }
+            .text{
+                width:60%;
+                height: calc(.5rem*2);
+                margin: 10px;
+            }
+           
+        }
+        .btn{
+           
+            button{
+                width:80px;
+                height: calc(.3rem*2);
+                border:1px #ccc solid;
+                 margin: 50px 40px 10px 10px;
+            }
+            .delete{
+                background: #e5e5e5;
+            }
+            .sure{
+                background: #1890FF 100% ;
+                color: #fff;
+            }
+            
+        }
+        
+    }
+}
+@media screen and (min-width:768px){
+    .achiveform{
+        width: 50%;
+        height: auto;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h2{
+            padding: 10px;
+            text-align: left;
+            font-size: 16px;
+
+        }
+        p{
+            height: 40px;
+            input{
+                border: 1px #ccc solid;
+            }
+            margin: 10px 15px;
+            span{
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                border: 1px skyblue solid;
+                margin: 5px 20px;
+                text-align: center;
+                line-height: 30px;
+            }
+            .text{
+                width: 297px;
+                height: 93px;
+            }
+           
+        }
+        .btn{
+            height: 100px;
+            width: 100%;
+            button{
+                width:80px;
+                height: 40px;
+                border:1px #ccc solid;
+                 margin: 50px 40px 10px 10px;
+            }
+            .delete{
+                background: #e5e5e5;
+            }
+            .sure{
+                background: #1890FF 100% ;
+                color: #fff;
+            }
+            
+        }
+        
+    }
+}

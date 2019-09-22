@@ -1,9 +1,12 @@
-import React,{  useEffect} from 'react';
+/* eslint-disable no-undef */
+import React,{  useEffect,useState} from 'react';
 import { connect } from 'dva';
 import styles from './indexPresident.css'
 
 import echarts from 'echarts';
 function President(){
+   const [index, setIndex] = useState(0)
+  
   useEffect(() => {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
@@ -93,6 +96,7 @@ function President(){
     })
     
   })
+ 
   
     return (
         <div className={styles.President}>
@@ -102,10 +106,10 @@ function President(){
            <div className={styles.top}>
                <div className={styles.count}>
                    <p>选择班级：</p>
-                   <span>1703D</span>
-                   <span>1704A</span>
-                   <span>1704B</span>
-                   <span>1704C</span>
+                   <span  className={index === 0 ? 'navactive' : ''} onClick={() => setIndex(0)}>1703D</span>
+                   <span  className={index === 1 ? 'navactive' : ''} onClick={() => setIndex(1)}>1704A</span>
+                   <span  className={index === 2 ? 'navactive' : ''} onClick={() => setIndex(2)}>1704B</span>
+                   <span  className={index === 3 ? 'navactive' : ''} onClick={() => setIndex(3)}>1704C</span>
                </div>
                <div className={styles.name}>
                  <p>名单：</p>
@@ -118,7 +122,7 @@ function President(){
           </div>
         <div className={styles.record }>
           <div className={styles.readOnly}>
-            <div>2019-08-30</div>
+            <div>2019-08-30</div> 
             <div>今日分析及解决方案：</div>
             <div>点击查看历史记录</div>
           </div>
