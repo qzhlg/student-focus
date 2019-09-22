@@ -127,10 +127,10 @@ background: #1890FF;
         color: #fff;
         text-align: center;
         line-height: 100px;
-        /* position: fixed;
+        position: fixed;
         top:0;
         left:0;
-        z-index: 100; */
+        z-index: 100;
     }
     .visualmain{
         height: 100%;
@@ -140,7 +140,7 @@ background: #1890FF;
         height: 100px;
         width: 1350px;
         margin: 10px auto 0 ;
-        
+        margin-top: 100px;
     }
     .navleft{
         width: 60%;

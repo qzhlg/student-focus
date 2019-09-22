@@ -53,7 +53,7 @@ function Achievment(props) {
                     </label>
                 </p>
                 <div className={styles.btn}>
-                    < button className={styles.delete}>取消</button>
+                    < button className={styles.delete} onClick={() => clickMethod("取消")}>取消</button>
                     <button className={styles.sure} onClick={() => clickMethod("确定")}>确定</button>
                 </div>
 
@@ -61,7 +61,7 @@ function Achievment(props) {
             </div> : <div className={styles.achiveform}>
                     <h2>你确定删除吗？</h2>
                     <div className={styles.btn}>
-                        <button className={styles.delete}>取消</button>
+                        <button className={styles.delete} onClick={() => clickMethod("取消")}>取消</button>
                         <button className={styles.sure} onClick={() => clickMethod("确定")}>确定</button>
                     </div>
                 </div>}
