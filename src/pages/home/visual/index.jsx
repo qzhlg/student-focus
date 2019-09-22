@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Switch } from 'antd';
 import styles from './index.css'
 import 'antd/dist/antd.css'
 import Broken from '../../../components/broken'
-import Columnar from '../../../components/columnar'
+// import Columnar from '../../../components/columnar'
 import Center from '../../../components/center'
 
 function Visual(props) {

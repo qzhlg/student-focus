@@ -36,7 +36,7 @@ body {
     text-align: center;
   }
   .diform p {
-    height: calc(.4rem*2);
+    height: calc(.6rem*2);
   }
   .diform p input {
     border: 1px #ccc solid;

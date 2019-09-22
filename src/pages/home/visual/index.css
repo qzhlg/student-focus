@@ -127,12 +127,14 @@ background: #1890FF;
         color: #fff;
         text-align: center;
         line-height: 100px;
-        position: fixed;
+        /* position: fixed;
         top:0;
         left:0;
+        z-index: 100; */
     }
     .visualmain{
-        height: auto;
+        height: 100%;
+        width: 100%;
     }
     .nav{
         height: 100px;

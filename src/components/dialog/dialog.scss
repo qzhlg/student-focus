@@ -9,6 +9,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+
 }
 @media screen and (max-width:768px){
   html,body{
@@ -35,7 +36,7 @@ body {
     text-align: center;
   }
   p{
-    height:calc(.4rem*2);
+    height:calc(.6rem*2);
     input{
       border: 1px #ccc solid;
       // margin: 10px 30px;

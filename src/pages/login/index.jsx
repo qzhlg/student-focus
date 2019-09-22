@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'dva';
 import styles from './loginPage.css'
 
@@ -43,7 +43,7 @@ function LoginPage(props) {
               <input placeholder="请输入用户名" className={styles.ipt} onChange={(e) => setUserval(e.target.value)} />
             </p>
             <p>
-              <input placeholder="请输入密码" className={styles.ipt} onChange={(e) => setPawval(e.target.value)} />
+              <input placeholder="请输入密码"  className={styles.ipt} onChange={(e) => setPawval(e.target.value)} />
             </p>
 
             <p>
