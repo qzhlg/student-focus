@@ -62,7 +62,7 @@ function President(){
         {
           name: '理论',
           type: 'line',
-          data: [1, -2, 2, 5, 3, 2, 0],
+          data: [1, 2, 2, 5, 3, 2, 0],
           markPoint: {
             data: [
               { name: '周最低', value: -2, xAxis: 1, yAxis: -1.5 }
@@ -110,7 +110,6 @@ function President(){
                <div className={styles.name}>
                  <p>名单：</p>
                  <span>张三，张立，王强</span>
-                
                </div>
            </div>
           <div>
